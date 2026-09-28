@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ahnenverwaltung</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>Ahnenverwaltung</h1>
+    <p>Personen · Familien · Quellen · Ahnenbaum</p>
+  </div>
+  <div class="header-actions">
+    <button id="exportBtn">Daten exportieren</button>
+    <label class="file-button">Daten importieren<input id="importInput" type="file" accept=".json"></label>
+  </div>
+</header>
+
+<nav>
+  <button data-tab="tree" class="tab active">Ahnenbaum</button>
+  <button data-tab="persons" class="tab">Personen</button>
+  <button data-tab="families" class="tab">Familien</button>
+  <button data-tab="sources" class="tab">Quellen</button>
+</nav>
+
+<main>
+<section id="treeTab" class="tab-content">
+  <div class="toolbar">
+    <input id="treeSearch" placeholder="Person suchen …">
+    <select id="treePerson"></select>
+    <label>Generationen <input id="generations" type="number" min="1" max="10" value="5"></label>
+  </div>
+  <div id="selectedPerson" class="card"></div>
+  <div id="tree" class="tree"></div>
+</section>
+
+<section id="personsTab" class="tab-content hidden">
+  <div class="split">
+    <div>
+      <div class="toolbar">
+        <input id="personSearch" placeholder="Personen suchen …">
+        <button id="newPerson">+ Neue Person</button>
+      </div>
+      <div id="personList"></div>
+    </div>
+    <div id="personEditor" class="card"></div>
+  </div>
+</section>
+
+<section id="familiesTab" class="tab-content hidden">
+  <div id="familyList"></div>
+</section>
+
+<section id="sourcesTab" class="tab-content hidden">
+  <div class="toolbar"><button id="newSource">+ Neue Quelle</button></div>
+  <div id="sourceList"></div>
+</section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
