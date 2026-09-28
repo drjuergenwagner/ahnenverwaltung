@@ -1,30 +1,8 @@
-# Ahnenverwaltung v2 – GitHub Free
+# Ahnenverwaltung v3
+Statische genealogische Anwendung für GitHub Pages / GitHub Free.
 
-Statische Ahnenverwaltung für GitHub Pages. Kein Server und keine kostenpflichtigen Dienste erforderlich.
+Neu gegenüber v2: Geburtsname, Beziehungstypen, Familien, Ereignisse, Quellen, Dokumente/Fotos und Orte. Außerdem JSON-Import/Export und Ahnenbaum.
 
-## Funktionen
+Die Anwendung braucht keinen Server. Änderungen werden zunächst im Browser gespeichert. Mit **Daten exportieren** kann die komplette Datenbank gesichert und anschließend wieder als `data/data.json` in GitHub übernommen werden.
 
-- Personen suchen und auswählen
-- Personen anlegen, bearbeiten und löschen
-- Eltern und Ehepartner zuordnen
-- Ahnenbaum bis zu mehreren Generationen
-- Familienübersicht
-- Quellen zu Personen
-- Daten als JSON exportieren/importieren
-- Speicherung im Browser (`localStorage`)
-
-## GitHub Pages
-
-Repository anlegen → Dateien hochladen → Settings → Pages → Deploy from branch → `main` / `/ (root)`.
-
-## Wichtiger Hinweis zur Speicherung
-
-GitHub Pages ist statisch. Änderungen aus der Eingabemaske werden daher zunächst im Browser gespeichert und **nicht automatisch in GitHub zurückgeschrieben**.
-
-Mit **Daten exportieren** kann die aktuelle Datenbank als JSON-Datei heruntergeladen werden. Diese Datei kann anschließend wieder in das Repository hochgeladen werden.
-
-Damit bleibt die Anwendung mit einem kostenlosen GitHub-Account kompatibel und benötigt kein Backend.
-
-## Datenschutz
-
-Wenn das Repository öffentlich ist, sind die dort gespeicherten genealogischen Daten öffentlich. Für private Familiendaten sollte das Repository auf `Private` gestellt werden. Die Veröffentlichung über GitHub Pages und die Sichtbarkeit privater Repositories können je nach GitHub-Einstellungen und Tarif variieren.
+Dokumente und Fotos können unter `images/` im Repository abgelegt und in der Dokumentverwaltung über ihren Pfad verknüpft werden.
