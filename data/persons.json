@@ -1,1 +1,78 @@
-[]
+{
+  "persons": [
+    {
+      "id": "P001",
+      "firstName": "Oswald",
+      "lastName": "Möhlinger",
+      "gender": "m",
+      "birthDate": "1909-12-08",
+      "birthPlace": "Kleinostheim",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "Soldat",
+      "notes": ""
+    },
+    {
+      "id": "P002",
+      "firstName": "Eva",
+      "lastName": "Mesenzehl",
+      "gender": "f",
+      "birthDate": "1910-09-19",
+      "birthPlace": "Aschaffenburg",
+      "deathDate": "",
+      "deathPlace": "",
+      "occupation": "",
+      "notes": ""
+    },
+    {
+      "id": "P003",
+      "firstName": "Johannes",
+      "lastName": "Möhlinger",
+      "gender": "m",
+      "birthDate": "1883-02-08",
+      "birthPlace": "Waldsee",
+      "deathDate": "1911-01-01",
+      "deathPlace": "Kleinostheim",
+      "occupation": "Schreiner",
+      "notes": ""
+    },
+    {
+      "id": "P004",
+      "firstName": "Margaretha",
+      "lastName": "Bender",
+      "gender": "f",
+      "birthDate": "1886-12-02",
+      "birthPlace": "Kleinostheim",
+      "deathDate": "1910-02-01",
+      "deathPlace": "Kleinostheim",
+      "occupation": "",
+      "notes": ""
+    }
+  ],
+  "relationships": [
+    {
+      "id": "R001",
+      "parentId": "P003",
+      "childId": "P001",
+      "type": "biological"
+    },
+    {
+      "id": "R002",
+      "parentId": "P004",
+      "childId": "P001",
+      "type": "biological"
+    }
+  ],
+  "marriages": [
+    {
+      "id": "M001",
+      "spouse1Id": "P001",
+      "spouse2Id": "P002",
+      "date": "",
+      "place": "",
+      "divorceDate": "",
+      "notes": ""
+    }
+  ],
+  "sources": []
+}
