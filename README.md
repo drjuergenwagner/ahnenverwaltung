@@ -1,8 +1,22 @@
-# Ahnenverwaltung v3
-Statische genealogische Anwendung für GitHub Pages / GitHub Free.
+# Ahnenverwaltung – Version 4
 
-Neu gegenüber v2: Geburtsname, Beziehungstypen, Familien, Ereignisse, Quellen, Dokumente/Fotos und Orte. Außerdem JSON-Import/Export und Ahnenbaum.
+Die Daten sind in getrennte, eingerückte JSON-Dateien aufgeteilt:
 
-Die Anwendung braucht keinen Server. Änderungen werden zunächst im Browser gespeichert. Mit **Daten exportieren** kann die komplette Datenbank gesichert und anschließend wieder als `data/data.json` in GitHub übernommen werden.
+- `data/persons.json` – Personen
+- `data/relationships.json` – Eltern-/Kind-Beziehungen
+- `data/families.json` – Familien und Partnerschaften
+- `data/events.json` – Ereignisse
+- `data/sources.json` – Quellen
+- `data/documents.json` – Dokumente/Fotos
+- `data/places.json` – Orte
 
-Dokumente und Fotos können unter `images/` im Repository abgelegt und in der Dokumentverwaltung über ihren Pfad verknüpft werden.
+`index.html`, `styles.css` und `app.js` bilden die Anwendung.
+
+## GitHub Pages
+Repository → Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save.
+
+## Datenschutz
+Bei einem öffentlichen Repository sind die JSON-Dateien öffentlich. Reale Daten lebender Personen daher nicht in ein öffentliches Repository stellen.
+
+## Hinweis zur bisherigen data.json
+Die bisherige Datei wird nicht automatisch überschrieben. Vor der Umstellung bitte eine Sicherung behalten und den vorhandenen Datenbestand gezielt auf die neuen Dateien aufteilen.
